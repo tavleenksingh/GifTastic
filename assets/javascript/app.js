@@ -11,7 +11,7 @@
 		$('#giphyHolder').empty();
 
 		var reaction = $(this).attr('data-name');
-		var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=10&q=" + reaction + "&fmt=json";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=10&q=" + reaction + "&fmt=json";
 		
 		$.ajax({url: queryURL, method: 'GET'}).done(function(response) {
 	     	 console.log(queryURL);
